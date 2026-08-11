@@ -9,7 +9,6 @@ C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net1
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Azure.Identity.dll
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Humanizer.dll
-C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.Build.Framework.dll
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
@@ -163,3 +162,9 @@ C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net1
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\AgendamentoAPI.pdb
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\AgendamentoAPI.genruntimeconfig.cache
 C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\ref\AgendamentoAPI.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\AgendamentoAPI.sourcelink.json
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\BCrypt.Net-Next.dll

@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AgendamentoAPI.Controllers
+namespace AgendamentoAPI.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class AgendamentoController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AgendamentoController : ControllerBase
-    {
-    }
 }

@@ -9,9 +9,11 @@ public partial class Profissional
 
     public string Nome { get; set; } = null!;
 
-    public decimal? Preco { get; set; }
-
     public bool Disponivel { get; set; }
+
+    public string Email { get; set; } = null!;
+
+    public string Senha { get; set; } = null!;
 
     public virtual ICollection<Agendamento> Agendamentos { get; set; } = new List<Agendamento>();
 }

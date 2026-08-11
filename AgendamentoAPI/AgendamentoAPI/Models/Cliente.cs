@@ -11,5 +11,9 @@ public partial class Cliente
 
     public string Telefone { get; set; } = null!;
 
+    public string Email { get; set; } = null!;
+
+    public string Senha { get; set; } = null!;
+
     public virtual ICollection<Agendamento> Agendamentos { get; set; } = new List<Agendamento>();
 }

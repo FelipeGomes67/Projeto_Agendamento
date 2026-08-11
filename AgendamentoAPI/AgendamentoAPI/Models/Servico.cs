@@ -13,5 +13,7 @@ public partial class Servico
 
     public int DuracaoMinutos { get; set; }
 
+    public decimal Preco { get; set; }
+
     public virtual ICollection<Agendamento> Agendamentos { get; set; } = new List<Agendamento>();
 }
