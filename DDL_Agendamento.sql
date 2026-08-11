@@ -1,0 +1,45 @@
+CREATE DATABASE AgendamentoDB;
+
+GO
+
+USE AgendamentoDB;
+
+CREATE TABLE Cliente(
+	IdCliente UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+	Nome VARCHAR(255) NOT NULL,
+	Telefone VARCHAR(15) NOT NULL
+)
+
+CREATE TABLE Profissional(
+	IdProfissional UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+	Nome VARCHAR(255) NOT NULL,
+	Preco DECIMAL(10, 2),
+	Disponivel BIT NOT NULL DEFAULT 1
+)
+
+CREATE TABLE Servico(
+	IdServico UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+	Nome VARCHAR(255) NOT NULL,
+	Descricao VARCHAR(MAX),
+	DuracaoMinutos INT NOT NULL
+)
+
+CREATE TABLE Agendamento(
+	IdAgendamento UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+	IdCliente UNIQUEIDENTIFIER NOT NULL,
+	IdProfissional UNIQUEIDENTIFIER NOT NULL,
+	IdServico UNIQUEIDENTIFIER NOT NULL,
+
+	CONSTRAINT FK_Agendamento_Cliente FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente),
+	CONSTRAINT FK_Agendamento_Profissional FOREIGN KEY (IdProfissional) REFERENCES Profissional(IdProfissional),
+	CONSTRAINT FK_Agendamento_Servico FOREIGN KEY (IdServico) REFERENCES Servico(IdServico),
+
+	DataHoraInicio DATETIME2 NOT NULL,
+    DataHoraFim DATETIME2 NOT NULL,
+    Status VARCHAR(20) NOT NULL DEFAULT 'Agendado',
+)
+
+SELECT * FROM Cliente
+SELECT * FROM Profissional
+SELECT * FROM Servico
+SELECT * FROM Agendamento
