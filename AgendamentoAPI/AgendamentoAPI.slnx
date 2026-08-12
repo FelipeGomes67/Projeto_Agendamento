@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="AgendamentoAPI.Tests/AgendamentoAPI.Tests.csproj" />
   <Project Path="AgendamentoAPI/AgendamentoAPI.csproj" />
 </Solution>

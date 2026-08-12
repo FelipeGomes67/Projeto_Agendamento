@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\felipe\\Desktop\\Agendamento\\AgendamentoAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|c:\\users\\felipe\\desktop\\agendamento\\agendamentoapi\\agendamentoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|c:\\users\\52611156808\\desktop\\projeto_agendamento\\agendamentoapi\\agendamentoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|solutionrelative:agendamentoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|c:\\users\\felipe\\desktop\\agendamento\\agendamentoapi\\agendamentoapi\\agendamentoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|solutionrelative:agendamentoapi\\agendamentoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|c:\\users\\52611156808\\desktop\\projeto_agendamento\\agendamentoapi\\agendamentoapi\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|solutionrelative:agendamentoapi\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|c:\\users\\52611156808\\desktop\\projeto_agendamento\\agendamentoapi\\agendamentoapi\\controllers\\profissionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60A0D6CF-4F65-BF47-12FB-2B678E9C33FA}|AgendamentoAPI\\AgendamentoAPI.csproj|solutionrelative:agendamentoapi\\controllers\\profissionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgendamentoAPI",
-              "DocumentMoniker": "C:\\Users\\felipe\\Desktop\\Agendamento\\AgendamentoAPI\\AgendamentoAPI\\AgendamentoAPI.csproj",
-              "RelativeDocumentMoniker": "AgendamentoAPI\\AgendamentoAPI.csproj",
-              "ToolTip": "C:\\Users\\felipe\\Desktop\\Agendamento\\AgendamentoAPI\\AgendamentoAPI\\AgendamentoAPI.csproj",
-              "RelativeToolTip": "AgendamentoAPI\\AgendamentoAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-11T22:37:34.373Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\felipe\\Desktop\\Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Program.cs",
               "RelativeDocumentMoniker": "AgendamentoAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\felipe\\Desktop\\Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Program.cs",
               "RelativeToolTip": "AgendamentoAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T22:24:12.945Z",
+              "WhenOpened": "2026-08-12T16:48:23.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgendamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Controllers\\AgendamentoController.cs",
+              "RelativeDocumentMoniker": "AgendamentoAPI\\Controllers\\AgendamentoController.cs",
+              "ToolTip": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Controllers\\AgendamentoController.cs",
+              "RelativeToolTip": "AgendamentoAPI\\Controllers\\AgendamentoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T16:47:29.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfissionalController.cs",
+              "DocumentMoniker": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Controllers\\ProfissionalController.cs",
+              "RelativeDocumentMoniker": "AgendamentoAPI\\Controllers\\ProfissionalController.cs",
+              "ToolTip": "C:\\Users\\52611156808\\Desktop\\Projeto_Agendamento\\AgendamentoAPI\\AgendamentoAPI\\Controllers\\ProfissionalController.cs",
+              "RelativeToolTip": "AgendamentoAPI\\Controllers\\ProfissionalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T16:40:38.732Z",
               "EditorCaption": ""
             }
           ]

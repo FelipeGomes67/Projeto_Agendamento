@@ -24,13 +24,14 @@ public partial class AgendamentoDbContext : DbContext
     public virtual DbSet<Servico> Servicos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=AgendamentoDB;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Agendamento>(entity =>
         {
-            entity.HasKey(e => e.IdAgendamento).HasName("PK__Agendame__DC0823C9707C09CB");
+            entity.HasKey(e => e.IdAgendamento).HasName("PK__Agendame__DC0823C93A983585");
 
             entity.ToTable("Agendamento");
 
@@ -58,24 +59,22 @@ public partial class AgendamentoDbContext : DbContext
 
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__D594664237A5A952");
+            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__D59466420D35683D");
 
             entity.ToTable("Cliente");
 
-            entity.HasIndex(e => e.Email, "UQ_Cliente_Email").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Cliente__A9D1053478B38083").IsUnique();
 
             entity.Property(e => e.IdCliente).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Email)
                 .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasDefaultValue("", "DF_Cliente_Email");
+                .IsUnicode(false);
             entity.Property(e => e.Nome)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.Senha)
                 .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasDefaultValue("", "DF_Cliente_Senha");
+                .IsUnicode(false);
             entity.Property(e => e.Telefone)
                 .HasMaxLength(15)
                 .IsUnicode(false);
@@ -83,30 +82,32 @@ public partial class AgendamentoDbContext : DbContext
 
         modelBuilder.Entity<Profissional>(entity =>
         {
-            entity.HasKey(e => e.IdProfissional).HasName("PK__Profissi__B9503FBC500B6D9C");
+            entity.HasKey(e => e.IdProfissional).HasName("PK__Profissi__B9503FBC20CC76D2");
 
             entity.ToTable("Profissional");
 
-            entity.HasIndex(e => e.Email, "UQ_Profissional_Email").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Profissi__A9D10534F14AF0BB").IsUnique();
 
             entity.Property(e => e.IdProfissional).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Disponivel).HasDefaultValue(true);
             entity.Property(e => e.Email)
                 .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasDefaultValue("", "DF_Profissional_Email");
+                .IsUnicode(false);
             entity.Property(e => e.Nome)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.Senha)
                 .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.Telefone)
+                .HasMaxLength(15)
                 .IsUnicode(false)
-                .HasDefaultValue("", "DF_Profissional_Senha");
+                .HasDefaultValue("");
         });
 
         modelBuilder.Entity<Servico>(entity =>
         {
-            entity.HasKey(e => e.IdServico).HasName("PK__Servico__474DDE3AEA3ACFDF");
+            entity.HasKey(e => e.IdServico).HasName("PK__Servico__474DDE3A1229E6A7");
 
             entity.ToTable("Servico");
 

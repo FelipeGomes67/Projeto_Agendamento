@@ -15,5 +15,7 @@ public partial class Profissional
 
     public string Senha { get; set; } = null!;
 
+    public string Telefone { get; set; } = null!;
+
     public virtual ICollection<Agendamento> Agendamentos { get; set; } = new List<Agendamento>();
 }

@@ -1,7 +1,8 @@
 CREATE DATABASE AgendamentoDB;
-
+GO
 
 USE AgendamentoDB;
+GO
 
 CREATE TABLE Cliente (
     IdCliente UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
@@ -14,6 +15,7 @@ CREATE TABLE Cliente (
 CREATE TABLE Profissional (
     IdProfissional UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
     Nome VARCHAR(255) NOT NULL,
+    Telefone VARCHAR(15) NOT NULL, -- <-- Campo de Telefone adicionado
     Disponivel BIT NOT NULL DEFAULT 1,
     Email VARCHAR(150) NOT NULL UNIQUE,
     Senha VARCHAR(255) NOT NULL

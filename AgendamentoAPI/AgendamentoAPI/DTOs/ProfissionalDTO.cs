@@ -16,6 +16,9 @@ namespace AgendamentoAPI.DTOs
         [Required(ErrorMessage = "A senha do profissional é obrigatória.")]
         [MinLength(6, ErrorMessage = "A senha deve ter no mínimo 6 caracteres.")]
         public string Senha { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "O telefone do profissional é obrigatório.")]
+        public string Telefone { get; set; } = string.Empty;
     }
 
     public class ProfissionalRespostaDTO
@@ -24,5 +27,6 @@ namespace AgendamentoAPI.DTOs
         public string Nome { get; set; } = string.Empty;
         public bool Disponivel { get; set; }
         public string Email { get; set; } = string.Empty;
+        public string Telefone { get; set; } = string.Empty;
     }
 }
