@@ -1,43 +1,51 @@
-# 📅 Agendamento API
+Aqui está o código Markdown completo, sem usar nenhum bloco de código externo, para você simplesmente copiar tudo de uma vez sem perigo de quebrar a formatação:
+📅 Agendamento API
 
-Uma API RESTful desenvolvida em **.NET 10** e **Entity Framework Core** para gerenciamento de agendamentos entre clientes e profissionais, com suporte a autenticação JWT e documentação interativa via Swagger UI.
+Uma API RESTful desenvolvida em .NET 10 e Entity Framework Core para gerenciamento de agendamentos entre clientes e profissionais, com suporte a autenticação JWT e documentação interativa via Swagger UI.
+🚀 Tecnologias Utilizadas
 
----
+    C# / .NET 10
 
-## 🚀 Tecnologias Utilizadas
+    Entity Framework Core (SQL Server)
 
-* **C# / .NET 10**
-* **Entity Framework Core** (SQL Server)
-* **JWT (JSON Web Token)** (Autenticação e Autorização por Roles)
-* **BCrypt.Net-Next** (Criptografia de senhas)
-* **Swashbuckle / Swagger UI** (Com autorização Bearer configurada)
-* **JSON Serializer** (Tratamento de loops em relacionamentos)
+    JWT (JSON Web Token) (Autenticação e Autorização por Roles)
 
----
+    BCrypt.Net-Next (Criptografia de senhas)
 
-## 🛠️ Funcionalidades Implementadas
+    Swashbuckle / Swagger UI (Com autorização Bearer configurada)
 
-- [x] Arquitetura em camadas com Padrão Repository (Interfaces & Implementation).
-- [x] Injeção de Dependência (DI) configurada para todos os serviços.
-- [x] Mapeamento de relacionamentos complexos (`Include`) para `Agendamento`, `Cliente`, `Profissional` e `Serviço`.
-- [x] Configuração de banco de dados SQL Server via `DbContext`.
-- [x] Autenticação via Token JWT e controle de acesso baseado em Roles (`Cliente` e `Profissional`).
-- [x] Política de **CORS** para integração com aplicações web/mobile.
-- [x] Documentação interativa via **Swagger UI** com suporte ao botão Bearer Authorize.
+    JSON Serializer (Tratamento de loops em relacionamentos)
 
----
+🛠️ Funcionalidades Implementadas
 
-## ⚙️ Configuração do Ambiente
+    [x] Arquitetura em camadas com Padrão Repository (Interfaces & Implementation).
 
-### 1. Pré-requisitos
-* [.NET 10 SDK](https://dotnet.microsoft.com/)
-* SQL Server (ou SQL Server Express / LocalDB)
-* Visual Studio 2022+ ou VS Code
+    [x] Injeção de Dependência (DI) configurada para todos os serviços.
 
-### 2. Configurar a String de Conexão e JWT
-No arquivo `appsettings.json`, ajuste a chave `ConexaoPadrao` e a chave secreta do JWT:
+    [x] Mapeamento de relacionamentos complexos (Include) para Agendamento, Cliente, Profissional e Serviço.
 
-```json
+    [x] Configuração de banco de dados SQL Server via DbContext.
+
+    [x] Autenticação via Token JWT e controle de acesso baseado em Roles (Cliente e Profissional).
+
+    [x] Política de CORS para integração com aplicações web/mobile.
+
+    [x] Documentação interativa via Swagger UI com suporte ao botão Bearer Authorize.
+
+⚙️ Configuração do Ambiente
+1. Pré-requisitos
+
+    .NET 10 SDK
+
+    SQL Server (ou SQL Server Express / LocalDB)
+
+    Visual Studio 2022+ ou VS Code
+
+2. Configurar a String de Conexão e JWT
+
+No arquivo appsettings.json, ajuste a chave ConexaoPadrao e a chave secreta do JWT:
+JSON
+
 {
   "ConnectionStrings": {
     "ConexaoPadrao": "Server=(localdb)\\MSSQLLocalDB;Database=AgendamentoDB;Trusted_Connection=True;TrustServerCertificate=True;"
@@ -50,32 +58,28 @@ No arquivo `appsettings.json`, ajuste a chave `ConexaoPadrao` e a chave secreta 
 🏎️ Como Executar a Aplicação
 
     Clone o repositório:
+    Bash
 
-Bash
-
-git clone [https://github.com/SeuUsuario/AgendamentoAPI.git](https://github.com/SeuUsuario/AgendamentoAPI.git)
+    git clone https://github.com/SeuUsuario/AgendamentoAPI.git
 
     Acesse a pasta do projeto:
+    Bash
 
-Bash
-
-cd AgendamentoAPI
+    cd AgendamentoAPI
 
     Restaure as dependências:
+    Bash
 
-Bash
-
-dotnet restore
+    dotnet restore
 
     Execute a aplicação:
+    Bash
 
-Bash
+    dotnet run
 
-dotnet run
+    Acesse a documentação no navegador:
 
-    Acesse a documentação do Swagger UI na raiz do navegador:
-
-    https://localhost:XXXX/
+        https://localhost:XXXX/
 
 📁 Estrutura do Projeto
 Plaintext
