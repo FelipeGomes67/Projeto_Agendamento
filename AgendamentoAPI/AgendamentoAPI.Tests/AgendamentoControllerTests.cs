@@ -1,8 +1,10 @@
-using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net;
-using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 using Xunit;
 
 namespace AgendamentoAPI.Tests
@@ -16,6 +18,37 @@ namespace AgendamentoAPI.Tests
         {
             _factory = factory;
             _client = factory.CreateClient();
+
+            // Geramos um token JWT válido para a role "Cliente"
+            string token = GerarTokenDeTeste("Cliente");
+
+            // Injetamos o token no cabeçalho de todas as requisições do teste
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        }
+
+        // Método auxiliar para criar tokens JWT válidos durante a execução dos testes
+        private string GerarTokenDeTeste(string role)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            // ATENÇÃO: Use a mesma chave que está configurada no seu appsettings/Program.cs
+            var key = Encoding.ASCII.GetBytes("SuaChaveSecretaSuperSeguraComPeloMenos32Caracteres!");
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.Name, "UsuarioTeste"),
+                    new Claim(ClaimTypes.Role, role)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
 
         [Fact]

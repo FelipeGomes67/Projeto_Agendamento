@@ -1,12 +1,14 @@
 ﻿using AgendamentoAPI.DTOs;
 using AgendamentoAPI.Interfaces;
 using AgendamentoAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AgendamentoAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ServicoController : ControllerBase
     {
         private readonly IServicoRepository _servicoRepository;

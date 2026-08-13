@@ -1,12 +1,14 @@
 ﻿using AgendamentoAPI.DTOs;
 using AgendamentoAPI.Interfaces;
 using AgendamentoAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AgendamentoAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteRepository _clienteRepository;
@@ -52,6 +54,7 @@ namespace AgendamentoAPI.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Cadastrar([FromBody] ClienteDTO dto)
         {
             if (!ModelState.IsValid)

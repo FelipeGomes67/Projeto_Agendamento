@@ -340,3 +340,5 @@ C:\Users\52611156808\Desktop\Projeto_Agendamento\AgendamentoAPI\AgendamentoAPI\o
 C:\Users\52611156808\Desktop\Projeto_Agendamento\AgendamentoAPI\AgendamentoAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\52611156808\Desktop\Projeto_Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\52611156808\Desktop\Projeto_Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\felipe\Desktop\Agendamento\AgendamentoAPI\AgendamentoAPI\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll

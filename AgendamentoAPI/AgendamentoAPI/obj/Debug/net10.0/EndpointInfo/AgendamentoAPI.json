@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Agendamento API",
+    "title": "AgendamentoAPI",
     "version": "v1"
   },
   "paths": {
@@ -741,10 +741,10 @@
     },
     "securitySchemes": {
       "Bearer": {
-        "type": "apiKey",
-        "description": "Insira o token JWT neste formato: Bearer {seu_token}",
-        "name": "Authorization",
-        "in": "header"
+        "type": "http",
+        "description": "Cole o seu token JWT no campo abaixo:",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   },

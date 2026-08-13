@@ -31,7 +31,7 @@ public partial class AgendamentoDbContext : DbContext
     {
         modelBuilder.Entity<Agendamento>(entity =>
         {
-            entity.HasKey(e => e.IdAgendamento).HasName("PK__Agendame__DC0823C93A983585");
+            entity.HasKey(e => e.IdAgendamento).HasName("PK__Agendame__DC0823C968E2245C");
 
             entity.ToTable("Agendamento");
 
@@ -59,11 +59,11 @@ public partial class AgendamentoDbContext : DbContext
 
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__D59466420D35683D");
+            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__D594664214A68DD4");
 
             entity.ToTable("Cliente");
 
-            entity.HasIndex(e => e.Email, "UQ__Cliente__A9D1053478B38083").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Cliente__A9D105343793BF45").IsUnique();
 
             entity.Property(e => e.IdCliente).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Email)
@@ -82,11 +82,11 @@ public partial class AgendamentoDbContext : DbContext
 
         modelBuilder.Entity<Profissional>(entity =>
         {
-            entity.HasKey(e => e.IdProfissional).HasName("PK__Profissi__B9503FBC20CC76D2");
+            entity.HasKey(e => e.IdProfissional).HasName("PK__Profissi__B9503FBC39127E31");
 
             entity.ToTable("Profissional");
 
-            entity.HasIndex(e => e.Email, "UQ__Profissi__A9D10534F14AF0BB").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Profissi__A9D10534937B4F03").IsUnique();
 
             entity.Property(e => e.IdProfissional).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Disponivel).HasDefaultValue(true);
@@ -101,13 +101,12 @@ public partial class AgendamentoDbContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.Telefone)
                 .HasMaxLength(15)
-                .IsUnicode(false)
-                .HasDefaultValue("");
+                .IsUnicode(false);
         });
 
         modelBuilder.Entity<Servico>(entity =>
         {
-            entity.HasKey(e => e.IdServico).HasName("PK__Servico__474DDE3A1229E6A7");
+            entity.HasKey(e => e.IdServico).HasName("PK__Servico__474DDE3A33C07EA3");
 
             entity.ToTable("Servico");
 
