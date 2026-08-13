@@ -1,4 +1,3 @@
-Aqui está o código Markdown completo, sem usar nenhum bloco de código externo, para você simplesmente copiar tudo de uma vez sem perigo de quebrar a formatação:
 📅 Agendamento API
 
 Uma API RESTful desenvolvida em .NET 10 e Entity Framework Core para gerenciamento de agendamentos entre clientes e profissionais, com suporte a autenticação JWT e documentação interativa via Swagger UI.
