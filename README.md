@@ -57,22 +57,18 @@ JSON
 🏎️ Como Executar a Aplicação
 
     Clone o repositório:
-    Bash
 
     git clone https://github.com/SeuUsuario/AgendamentoAPI.git
 
     Acesse a pasta do projeto:
-    Bash
 
     cd AgendamentoAPI
 
     Restaure as dependências:
-    Bash
 
     dotnet restore
 
     Execute a aplicação:
-    Bash
 
     dotnet run
 
